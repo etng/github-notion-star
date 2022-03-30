@@ -106,7 +106,7 @@ export class Notion {
                         {
                             type: 'text',
                             text: {
-                                content: repo.description || '',
+                                content: (repo.description || '').substring(0, 1800),
                             },
                         },
                     ],
